@@ -1,3 +1,4 @@
+## Expects Input to exist in file in same folder named "data.txt"
 # Part 1
 from functools import reduce
 print(reduce(lambda x,y: eval(str(x)+y), open('data.txt').read().splitlines()))
