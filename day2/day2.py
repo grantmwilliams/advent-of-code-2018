@@ -3,7 +3,7 @@
 from collections import Counter
 a, b = 0, 0
 for w in open('data.txt').read().splitlines():
-    counts = Counter(Counter(w).values())
+    counts = set(Counter(w).values())
     if 2 in counts:
         a+=1
     if 3 in counts:
