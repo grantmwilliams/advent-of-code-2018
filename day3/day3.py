@@ -40,5 +40,4 @@ for row in data:
             xy = (x+xi,y+yi)
             if overlap[xy] > 1:
                 overlap_claims.add(num)
-            overlap[xy] += 1
 print(next(f for f in all_claims-overlap_claims))
